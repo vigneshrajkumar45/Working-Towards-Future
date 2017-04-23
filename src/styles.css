@@ -1,0 +1,54 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+body { 
+    padding-top: 65px; 
+}
+.main-block{
+    min-width: 250px;
+    width: 50%;
+}
+.bg-prime{
+        background-color: #94618E!important;
+}
+
+.card-custom{
+    padding: 20px;
+    box-shadow: 0px 1px 5px 1px grey;
+    border-radius: 0;
+}
+.input .mat-input-placeholder,.mat-select-placeholder{
+    color: rgba(148, 97, 142, 0.77);
+}
+.input{
+     margin:0 10px 10px 0;
+}
+.pad-0{
+    padding: 0;
+}
+.tab-content{
+    min-height: 400px;
+    padding: 20px;
+}
+.margin-auto{
+    margin: auto;
+}
+.txt-color-1{
+    color: cyan;
+    text-shadow: 1px 1px 1px black;
+}
+.shadow{
+    box-shadow: 0px 1px 1px 1px grey;
+}
+.bg-img1{
+    background-image: url("images/pic1.jpg");
+    background-position: -200px -400px;
+}
+.bg-img2{
+    background-image: url("images/pic5.jpg");
+    background-size: cover;
+    background-position-y: -200px; 
+}
+button.btn.mat-raised-button{
+    color:white;
+    background-color: #492741;
+}

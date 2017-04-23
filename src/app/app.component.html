@@ -1,0 +1,83 @@
+<!--<nav class="navbar navbar-toggleable-md navbar-default navbar-fixed-top bg-prime shadow">
+    <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon glyphicon glyphicon-menu-hamburger"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+            <strong>BookHalls</strong>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav1">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Features</a>
+                </li>
+            </ul>
+        </div>
+        <md-sidenav-container>
+            <md-sidenav>
+                Yoii
+            </md-sidenav>
+        </md-sidenav-container>
+    </div>
+</nav>-->
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top bg-prime shadow">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <a class="navbar-brand" href="#">BookHalls</a>
+
+    <div class="navbar-collapse collapse" id="navbarsExampleDefault" aria-expanded="false">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <div class=" bg-img2 tab-content shadow">
+        
+        <div class="">
+            <div class="card main-block text-center margin-auto card-custom">
+                <div class="card-block">
+                    <h4 class="card-title">Warm Welcome...</h4>
+                    <h4 class="card-title">Search, Choose and Check Availability of Your Halls</h4>
+                    <md-select placeholder="City" class="input">
+                        <md-option *ngFor="let state of states" [value]="state.code">{{ state.name }}</md-option>
+                    </md-select>
+                    <md-input-container class="example-full-width" class="input">
+                        <input mdInput placeholder="Area">
+                    </md-input-container>
+                    <button md-raised-button class="btn">
+                        <span class="glyphicons glyphicons-search">Search</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!--<md-tab-group>
+    <md-tab label="One">
+        <div class="bg-img1 tab-content txt-color-1">
+            <h1>Warm Welcome to Book Halls</h1>
+            <h1>Search For Halls In and Around Your Area...</h1>
+        </div>
+    </md-tab>
+    <md-tab label="Two">
+        <div class="bg-img2 tab-content">
+            <h1>Get The Availabilty Of Date and Confirm Ur Booking...</h1>
+            <p>...</p>
+        </div>
+    </md-tab>
+</md-tab-group>-->
